@@ -17,6 +17,7 @@ class m180404_114837_create_order_table extends Migration
             'user_id' => $this->integer(),
             'qty' => $this->integer(),
             'sum' => $this->integer(),
+            'discount' => $this->integer(),
             'status' => $this->integer(),
             'name' => $this->string(),
             'email' => $this->string(),

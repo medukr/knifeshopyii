@@ -17,11 +17,12 @@ class m180404_114855_create_order_items_table extends Migration
             'order_id' => $this->integer(),
             'product_id' => $this->integer(),
             'price' => $this->integer(),
+            'discount_price' => $this->integer(),
             'item_qty' => $this->integer(),
             'item_sum' => $this->integer(),
             'status' => $this->integer(),
-            'create_at' => $this->date()->notNull(),
-            'update_at' => $this->date(),
+//            'create_at' => $this->date()->notNull(),
+//            'update_at' => $this->date(),
         ]);
     }
 
