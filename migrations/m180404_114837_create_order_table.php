@@ -12,11 +12,11 @@ class m180404_114837_create_order_table extends Migration
      */
     public function safeUp()
     {
-        $this->createTable('{{order}}', [
+        $this->createTable('order', [
             'id' => $this->primaryKey(),
             'user_id' => $this->integer(),
             'qty' => $this->integer(),
-            'sum' => $this->integer(),
+            'sum' => $this->float(),
             'discount' => $this->integer(),
             'status' => $this->integer(),
             'name' => $this->string(),
@@ -33,6 +33,6 @@ class m180404_114837_create_order_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable('{{order}}');
+        $this->dropTable('order');
     }
 }

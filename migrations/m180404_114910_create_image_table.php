@@ -12,7 +12,7 @@ class m180404_114910_create_image_table extends Migration
      */
     public function safeUp()
     {
-        $this->createTable('{{image}}', [
+        $this->createTable('image', [
             'id' => $this->primaryKey(),
             'item_id' => $this->integer(),
             'file_path' => $this->string(),
@@ -27,6 +27,6 @@ class m180404_114910_create_image_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable('{{image}}');
+        $this->dropTable('image');
     }
 }

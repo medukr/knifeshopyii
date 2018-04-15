@@ -12,7 +12,7 @@ class m180404_114808_create_category_table extends Migration
      */
     public function safeUp()
     {
-        $this->createTable('{{category}}', [
+        $this->createTable('category', [
             'id' => $this->primaryKey(),
             'parent_id' => $this->integer(),
             'name' => $this->integer(),
@@ -27,6 +27,6 @@ class m180404_114808_create_category_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable('{{category}}');
+        $this->dropTable('category');
     }
 }

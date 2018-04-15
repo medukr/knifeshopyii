@@ -12,7 +12,7 @@ class m180404_113103_create_user_contacts_table extends Migration
      */
     public function safeUp()
     {
-        $this->createTable('{{user_contacts}}', array(
+        $this->createTable('user_contacts', array(
             'id' => $this->primaryKey(),
             'user_id' => $this->integer(),
             'full_name' => $this->string(),
@@ -32,6 +32,6 @@ class m180404_113103_create_user_contacts_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable('{{user_contacts}}');
+        $this->dropTable('user_contacts');
     }
 }

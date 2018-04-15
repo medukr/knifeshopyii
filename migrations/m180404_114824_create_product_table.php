@@ -12,13 +12,13 @@ class m180404_114824_create_product_table extends Migration
      */
     public function safeUp()
     {
-        $this->createTable('{{product}}', [
+        $this->createTable('product', [
             'id' => $this->primaryKey(),
             'category_id' => $this->integer(),
             'name' => $this->string(),
             'content' => $this->string(),
             'status' => $this->string(),
-            'price' => $this->integer(),
+            'price' => $this->float(),
             'discount' => $this->integer(),
             'image' => $this->string(),
             'keywords' => $this->string(),
@@ -33,6 +33,6 @@ class m180404_114824_create_product_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable('{{product}}');
+        $this->dropTable('product');
     }
 }
