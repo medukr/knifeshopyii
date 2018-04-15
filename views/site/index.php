@@ -4,50 +4,140 @@
 
 $this->title = 'My Yii Application';
 ?>
-<div class="site-index">
+<div class="container">
+<div class="content-top">
+    <h1>NEW RELEASED</h1>
+    <div class="grid-in">
+        <div class="col-md-4 grid-top">
+            <a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/pi.jpg" alt="">
+                <div class="b-wrapper">
+                    <h3 class="b-animate b-from-left    b-delay03 ">
+                        <span>T-Shirt</span>
+                    </h3>
+                </div>
+            </a>
 
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
 
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
-
-    <div class="body-content">
-
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
-            </div>
+            <p><a href="single.html">Contrary to popular</a></p>
         </div>
+        <div class="col-md-4 grid-top">
+            <a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/pi1.jpg" alt="">
+                <div class="b-wrapper">
+                    <h3 class="b-animate b-from-left    b-delay03 ">
+                        <span>Shoe</span>
+                    </h3>
+                </div>
+            </a>
+            <p><a href="single.html">classical Latin</a></p>
+        </div>
+        <div class="col-md-4 grid-top">
+            <a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/pi2.jpg" alt="">
+                <div class="b-wrapper">
+                    <h3 class="b-animate b-from-left    b-delay03 ">
+                        <span>Bag</span>
+                    </h3>
+                </div>
+            </a>
+            <p><a href="single.html">undoubtable</a></p>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+    <div class="grid-in">
+        <div class="col-md-4 grid-top">
+            <a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/pi3.jpg" alt="">
+                <div class="b-wrapper">
+                    <h3 class="b-animate b-from-left    b-delay03 ">
+                        <span>Shirt</span>
+                    </h3>
+                </div>
+            </a>
+            <p><a href="single.html">suffered alteration</a></p>
+        </div>
+        <div class="col-md-4 grid-top">
+            <a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/pi4.jpg" alt="">
+                <div class="b-wrapper">
+                    <h3 class="b-animate b-from-left    b-delay03 ">
+                        <span>Bag</span>
+                    </h3>
+                </div>
+            </a>
+            <p><a href="single.html">Content here</a></p>
+        </div>
+        <div class="col-md-4 grid-top">
+            <a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/pi5.jpg" alt="">
+                <div class="b-wrapper">
+                    <h3 class="b-animate b-from-left    b-delay03 ">
+                        <span>Shoe</span>
+                    </h3>
+                </div>
+            </a>
+            <p><a href="single.html">readable content</a></p>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<!----->
+
+<div class="content-top-bottom">
+    <h2>Featured Collections</h2>
+    <div class="col-md-6 men">
+        <a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/t1.jpg" alt="">
+            <div class="b-wrapper">
+                <h3 class="b-animate b-from-top top-in   b-delay03 ">
+                    <span>Lorem</span>
+                </h3>
+            </div>
+        </a>
+
 
     </div>
+    <div class="col-md-6">
+        <div class="col-md1 ">
+            <a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/t2.jpg" alt="">
+                <div class="b-wrapper">
+                    <h3 class="b-animate b-from-top top-in1   b-delay03 ">
+                        <span>Lorem</span>
+                    </h3>
+                </div>
+            </a>
+
+        </div>
+        <div class="col-md2">
+            <div class="col-md-6 men1">
+                <a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/t3.jpg" alt="">
+                    <div class="b-wrapper">
+                        <h3 class="b-animate b-from-top top-in2   b-delay03 ">
+                            <span>Lorem</span>
+                        </h3>
+                    </div>
+                </a>
+
+            </div>
+            <div class="col-md-6 men2">
+                <a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/t4.jpg" alt="">
+                    <div class="b-wrapper">
+                        <h3 class="b-animate b-from-top top-in2   b-delay03 ">
+                            <span>Lorem</span>
+                        </h3>
+                    </div>
+                </a>
+
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <div class="clearfix"> </div>
+</div>
+</div>
+<!---->
+<div class="content-bottom">
+    <ul>
+        <li><a href="#"><img class="img-responsive" src="images/lo.png" alt=""></a></li>
+        <li><a href="#"><img class="img-responsive" src="images/lo1.png" alt=""></a></li>
+        <li><a href="#"><img class="img-responsive" src="images/lo2.png" alt=""></a></li>
+        <li><a href="#"><img class="img-responsive" src="images/lo3.png" alt=""></a></li>
+        <li><a href="#"><img class="img-responsive" src="images/lo4.png" alt=""></a></li>
+        <li><a href="#"><img class="img-responsive" src="images/lo5.png" alt=""></a></li>
+        <div class="clearfix"> </div>
+    </ul>
 </div>
