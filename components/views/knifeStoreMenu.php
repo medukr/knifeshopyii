@@ -5,7 +5,7 @@
     <div class=" h_menu4">
         <ul class="memenu skyblue">
             <li class="active grid"><a class="color8" href="/">Home</a></li>
-            <li><a class="color1" href="#">Men</a>
+            <li><a class="color1" href="#">Brands</a>
                 <div class="mepanel">
                     <div class="row">
                         <div class="col1">
@@ -61,7 +61,7 @@
                     </div>
                 </div>
             </li>
-            <li class="grid"><a class="color2" href="#">	Women</a>
+            <li class="grid"><a class="color2" href="#">Styles</a>
                 <div class="mepanel">
                     <div class="row">
                         <div class="col1">

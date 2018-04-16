@@ -27,16 +27,19 @@ class AppAsset extends AssetBundle
         'css/flexslider.css',
     ];
     public $js = [
-        'js/jquery.flexslider.js',
         'js/jquery.min.js',
+        'js/jquery.flexslider.js',
         'js/main.js',
         'js/memenu.js',
-        'js/responsiveslides.min.js',
         'js/simpleCart.min.js',
 
     ];
     public $depends = [
         'yii\web\YiiAsset',
         //'yii\bootstrap\BootstrapAsset',
+    ];
+
+    public $jsOptions = [
+        'position' => \yii\web\View::POS_HEAD
     ];
 }
