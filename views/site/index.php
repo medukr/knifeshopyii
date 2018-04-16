@@ -4,6 +4,7 @@
 
 $this->title = 'My Yii Application';
 ?>
+<?= \app\components\BannerWidget::widget()?>
 <div class="container">
 <div class="content-top">
     <h1>NEW RELEASED</h1>

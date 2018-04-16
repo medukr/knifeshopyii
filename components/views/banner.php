@@ -7,7 +7,7 @@ $this->registerJsFile('js/banner.js',  ['position' => yii\web\View::POS_END]);
 
         <div  id="top" class="callbacks_container">
             <ul class="rslides" id="slider">
-                <li style="background: url('../images/KS2335_KS2330_LS1R.jpg')">
+                <li style="background: url('/images/KS2335_KS2330_LS1R.jpg')">
                     <div class="container">
                         <div class="banner-text">
                             <h3>Lorem Ipsum is not simply dummy  </h3>
@@ -16,7 +16,7 @@ $this->registerJsFile('js/banner.js',  ['position' => yii\web\View::POS_END]);
                         </div>
                     </div>
                 </li>
-                <li style="background: url('../images/KS7900GRYBLK_LS1R.jpg')">
+                <li style="background: url('/images/KS7900GRYBLK_LS1R.jpg')">
                     <div class="container">
                         <div class="banner-text">
                             <h3>There are many variations </h3>
@@ -26,7 +26,7 @@ $this->registerJsFile('js/banner.js',  ['position' => yii\web\View::POS_END]);
                         </div>
                     </div>
                 </li>
-                <li style="background: url('../images/KS1558_LS1R.jpg')">
+                <li style="background: url('/images/KS1558_LS1R.jpg')">
                     <div class="container">
                         <div class="banner-text">
                             <h3>Sed ut perspiciatis unde omnis</h3>

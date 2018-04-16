@@ -1,11 +1,16 @@
+<?php
+
+use yii\helpers\Url;
+
+?>
 <div class="head-top">
     <div class="logo">
-        <a href="/"><img src="images/logo.png" alt=""></a>
+        <a href="/"><img src="/images/logo.png" alt=""></a>
     </div>
     <div class=" h_menu4">
         <ul class="memenu skyblue">
             <li class="active grid"><a class="color8" href="/">Home</a></li>
-            <li><a class="color1" href="#">Brands</a>
+            <li><a class="color1" href="<?= Url::to('/brands')?>">Brands</a>
                 <div class="mepanel">
                     <div class="row">
                         <div class="col1">
@@ -118,7 +123,7 @@
                 </div>
             </li>
             <li><a class="color4" href="blog.html">Blog</a></li>
-            <li><a class="color6" href="contact.html">Conact</a></li>
+            <li><a class="color6" href="<?= Url::to('/contact')?>">Conact</a></li>
         </ul>
     </div>
 

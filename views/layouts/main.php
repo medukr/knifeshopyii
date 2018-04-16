@@ -49,8 +49,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
             <div class="header-left">
                 <ul>
-                    <li ><a href="login.html"  >Login</a></li>
-                    <li><a  href="register.html"  >Register</a></li>
+                    <li><a href="<?= Url::to('/login')?>">Login</a></li>
+                    <li><a href="<?= Url::to('/about')?>">About</a></li>
 
                 </ul>
                 <div class="cart box_1">
@@ -71,11 +71,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <?= \app\components\KnifeStoreMenu::widget();?>
     </div>
     </div>
-
-</div>
-
-<?= \app\components\BannerWidget::widget() ?>
-
 <!--content-->
 <div class="content">
     <?= $content?>
