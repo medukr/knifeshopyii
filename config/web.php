@@ -49,7 +49,7 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                '<action:[\w-]+>' => 'site/<action>'
+//                '<action:[\w-]+>' => 'site/<action>'
             ],
         ],
 
