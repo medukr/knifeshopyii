@@ -8,7 +8,9 @@
 
 namespace app\components;
 
+use app\models\Category;
 use yii\base\Widget;
+use app\models\Brand;
 
 class KnifeStoreMenu extends Widget
 {
@@ -19,6 +21,10 @@ class KnifeStoreMenu extends Widget
 
     public function run()
     {
-        return $this->render('knifeStoreMenu');
+        $popularBrands = Brand::find()->where(['between', 'name', "a", "z" ])
+            ->andWhere(['status'=> 1])->limit(10)->all();
+        $categories = Category::find()->all();
+
+        return $this->render('knifeStoreMenu', compact('popularBrands', 'categories'));
     }
 }

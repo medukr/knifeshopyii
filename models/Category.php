@@ -5,22 +5,22 @@ namespace app\models;
 use Yii;
 
 /**
- * This is the model class for table "brand".
+ * This is the model class for table "category".
  *
  * @property int $id
+ * @property int $parent_id
  * @property string $name
  * @property string $keywords
  * @property string $description
- * @property int $status
  */
-class Brand extends \yii\db\ActiveRecord
+class Category extends \yii\db\ActiveRecord
 {
     /**
      * @inheritdoc
      */
     public static function tableName()
     {
-        return 'brand';
+        return 'category';
     }
 
     public function getProducts()
@@ -34,11 +34,8 @@ class Brand extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name'], 'required'],
-            [['status'], 'integer'],
-            [['name', 'keywords'], 'string', 'max' => 100],
-            [['description'], 'string', 'max' => 255],
-            [['name'], 'unique'],
+            [['parent_id'], 'integer'],
+            [['name', 'keywords', 'description'], 'string', 'max' => 255],
         ];
     }
 
@@ -49,10 +46,10 @@ class Brand extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
+            'parent_id' => 'Parent ID',
             'name' => 'Name',
             'keywords' => 'Keywords',
             'description' => 'Description',
-            'status' => 'Status',
         ];
     }
 }

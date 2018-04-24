@@ -219,3 +219,30 @@ $this->registerCssFile('css/amshopbybrand.min.css',  ['position' => yii\web\View
                 $(this).applyBrandFilter('.brands-letter');
             });</script><p></p>
     </div>
+
+//----------------------------------------------------------------------------------------
+    <!--    <div class=" brand-images " style="float:left; width:100%">-->
+    <!--        --><?php //for ($i = 0; $i < count($condition); $i++): ?>
+    <!--            <div class="brands-letter letter---><?//= $condition[$i] ?><!--">-->
+    <!--                <div id="--><?//= $condition[$i] ?><!--" class="brand-item-letter">-->
+    <!--                    <span>--><?//= $condition[$i] ?><!--</span>-->
+    <!--                </div>-->
+    <!--                <div class="brand-item-links-to-brand">-->
+    <!--                    --><?php //if ($condition[$i] == '#'): ?>
+    <!--                    --><?php //foreach ($brands->filterWhere(['not between', 'name', 'a','z', false])->all() as $brand): ?>
+    <!--                        <a href="/brand/a-r-s-knives.html" class="brand-btn"> --><?//= $brand->name ?><!-- </a>-->
+    <!---->
+    <!--                    --><?php //endforeach; ?>
+    <!--                    --><?php //else: ?>
+    <!--                    --><?php //foreach ($brands->filterWhere(['like', 'name', "{$condition[$i]}%", false])->all() as $brand): ?>
+    <!--                        <a href="/brand/a-r-s-knives.html" class="brand-btn"> --><?//= $brand->name ?><!-- </a>-->
+    <!---->
+    <!--                    --><?php //endforeach; ?>
+    <!--                    --><?php //endif; ?>
+    <!---->
+    <!---->
+    <!---->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        --><?php //endfor; ?>
+    <!--    </div>-->

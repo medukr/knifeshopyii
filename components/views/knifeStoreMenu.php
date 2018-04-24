@@ -10,7 +10,7 @@ use yii\helpers\Url;
     <div class=" h_menu4">
         <ul class="memenu skyblue">
             <li class="active grid"><a class="color8" href="/">Home</a></li>
-            <li><a class="color1" href="<?= Url::to('/brands')?>">Brands</a>
+            <li><a class="color1" href="<?= Url::to('/brand')?>">Brands</a>
                 <div class="mepanel">
                     <div class="row">
                         <div class="col1">
@@ -51,22 +51,16 @@ use yii\helpers\Url;
                             <div class="h_nav">
                                 <h4>Popular Brands</h4>
                                 <ul>
-                                    <li><a href="products.html">Levis</a></li>
-                                    <li><a href="products.html">Persol</a></li>
-                                    <li><a href="products.html">Nike</a></li>
-                                    <li><a href="products.html">Edwin</a></li>
-                                    <li><a href="products.html">New Balance</a></li>
-                                    <li><a href="products.html">Jack & Jones</a></li>
-                                    <li><a href="products.html">Paul Smith</a></li>
-                                    <li><a href="products.html">Ray-Ban</a></li>
-                                    <li><a href="products.html">Wood Wood</a></li>
+                                    <?php foreach ($popularBrands as $popularBrand): ?>
+                                        <li><a href="<?= Url::to(["/brand/{$popularBrand->url}"])?>"><?= $popularBrand->name?></a></li>
+                                    <?php endforeach; ?>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </li>
-            <li class="grid"><a class="color2" href="#">Styles</a>
+            <li class="grid"><a class="color2" href="<?= Url::to(["/category"])?>">Categories</a>
                 <div class="mepanel">
                     <div class="row">
                         <div class="col1">
@@ -105,17 +99,11 @@ use yii\helpers\Url;
                         </div>
                         <div class="col1">
                             <div class="h_nav">
-                                <h4>Popular Brands</h4>
+                                <h4>Popular Categories</h4>
                                 <ul>
-                                    <li><a href="products.html">Levis</a></li>
-                                    <li><a href="products.html">Persol</a></li>
-                                    <li><a href="products.html">Nike</a></li>
-                                    <li><a href="products.html">Edwin</a></li>
-                                    <li><a href="products.html">New Balance</a></li>
-                                    <li><a href="products.html">Jack & Jones</a></li>
-                                    <li><a href="products.html">Paul Smith</a></li>
-                                    <li><a href="products.html">Ray-Ban</a></li>
-                                    <li><a href="products.html">Wood Wood</a></li>
+                                    <?php foreach ($categories as $category): ?>
+                                    <li><a href="<?= Url::to(["/category/{$category->url}"])?>"><?= $category->name?></a></li>
+                                    <?php endforeach; ?>
                                 </ul>
                             </div>
                         </div>

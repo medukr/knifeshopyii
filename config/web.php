@@ -49,7 +49,13 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-//                '<action:[\w-]+>' => 'site/<action>'
+                '/brand' => '/brand',
+                '/category' => '/category',
+                '<action:[\w-]+>' => 'site/<action>',
+                'brand/<url:[\w-]+>' => 'brand/view',
+                'category/<url:[\w-]+>' => 'category/view',
+                'brand/<brandUrl:[\w-]+>/<url:[\w-]+>' => 'product/view',
+                'category/<categoryUrl:[\w-]+>/<url:[\w-]+>' => 'product/view',
             ],
         ],
 
